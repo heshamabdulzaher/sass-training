@@ -1,0 +1,17 @@
+.btn {
+  height: 40px;
+  min-width: 80px;
+  padding: 0 24px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  &__primary {
+    background-color: $pColor;
+    color: white;
+  }
+  &__secondary {
+    background-color: $sColor;
+    color: black;
+  }
+}
