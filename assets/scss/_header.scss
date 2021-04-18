@@ -1,0 +1,38 @@
+header {
+  background-color: #fff;
+  padding: 10px 0;
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      height: 32px;
+    }
+    span {
+      font-size: 32px;
+      font-weight: bold;
+      color: #1d1d1d;
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+  }
+  li {
+    padding: 8px;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button {
+    min-width: 80px;
+    background-color: $pColor;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

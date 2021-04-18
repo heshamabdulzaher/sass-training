@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+// Colors
+$pColor: blue;
+$sColor: red;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+*[class*='flex'] {
+  display: flex;
+}
+*[class*='__jc-center'] {
+  justify-content: center;
+}
+*[class*='__jc-between'] {
+  justify-content: space-between;
+}
+*[class*='__jc-end'] {
+  justify-content: flex-end;
+}
+*[class*='__ai-center'] {
+  align-items: center;
+}
+*[class*='__ai-start'] {
+  align-items: flex-start;
+}
+*[class*='__fd-col'] {
+  flex-direction: column;
+}
+*[class*='__fd-row'] {
+  flex-direction: row;
+}
