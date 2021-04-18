@@ -21,18 +21,34 @@ header {
     font-weight: 500;
     font-size: 16px;
     cursor: pointer;
+    white-space: nowrap;
   }
-  button {
-    // min-width: 80px;
-    // background-color: $pColor;
-    // color: white;
-    // height: 40px;
-    // font-size: 15px;
-    // font-weight: bold;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // border-radius: 4px;
-    // cursor: pointer;
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    padding: 0;
+    padding-top: 16px;
+    .container {
+      flex-wrap: wrap;
+    }
+    ul {
+      order: 1;
+      flex-basis: 100%;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    li {
+      flex: 1;
+      margin: 0;
+      text-align: center;
+      &.active {
+        flex: 2;
+        color: $pColor;
+        font-weight: bold;
+        border-bottom: 2px solid $pColor;
+      }
+    }
   }
 }

@@ -12,6 +12,7 @@
   }
   &__content {
     color: white;
+    padding-right: 30px;
     h1 {
       font-size: 50px;
       margin-bottom: 20px;
@@ -21,6 +22,32 @@
       font-size: 17px;
       max-width: 500px;
       margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .hero {
+    height: auto;
+    padding: 50px 0;
+    .container {
+      flex-direction: column-reverse;
+    }
+    img {
+      margin-bottom: 40px;
+    }
+    &__content {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    &__content {
+      text-align: start;
+      h1 {
+        font-size: 24px;
+      }
     }
   }
 }
